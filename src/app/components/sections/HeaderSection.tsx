@@ -8,7 +8,9 @@ interface Props {}
 const HeaderSection = ({}: Props) => {
   return (
     <SectionWrapper>
-      <h1>Fon & Job</h1>
+      <h1 className="font-[Tangerine] font-bold text-4xl text-center">
+        Fon & Job
+      </h1>
       <NextImage
         src="/images/placeholder.png"
         alt="Fon and Job"
