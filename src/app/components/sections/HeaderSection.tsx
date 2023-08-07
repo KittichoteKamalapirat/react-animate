@@ -50,6 +50,14 @@ const AnimateText = () => {
           Job
         </h1>
       </div>
+      <h2
+        className={clsx(
+          "transition-all duration-[2000ms] delay-[2000ms] text-xl text-center",
+          animate ? "opacity-100" : "opacity-0"
+        )}
+      >
+        19 Aug 2023
+      </h2>
     </div>
   );
 };
@@ -153,7 +161,6 @@ const HeaderSection = ({}: Props) => {
 
       <div className="absolute z-10 left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2">
         <AnimateText />
-        <h2 className="text-xl text-center">19 Aug 2023</h2>
       </div>
     </div>
   );
