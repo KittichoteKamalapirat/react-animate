@@ -14,6 +14,12 @@ module.exports = {
           // Inter: ['Inter', 'Roboto', 'sans-serif'],
         },
       },
+      colors: {
+        primary: {
+          100: "#FBEFF0",
+          DEFAULT: "#b23040",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
