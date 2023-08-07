@@ -6,8 +6,8 @@ interface Props {}
 
 const InviteSection = ({}: Props) => {
   return (
-    <SectionWrapper className="flex items-center justify-center w-screen h-screen ">
-      <div className="relative rounded-md max-w-lg py-40 md:py-20 bg-white w-full text-xl text-gray-800 shadow-[0_0_10px_0px_rgba(0,0,0,0.1)] mx-4">
+    <SectionWrapper className="flex items-center justify-center w-screen py-20 md:py-20">
+      <div className="relative rounded-md max-w-lg py-40 md:py-60 bg-white w-full text-xl text-gray-800 shadow-[0_0_10px_0px_rgba(0,0,0,0.1)] mx-4">
         <p className="text-center">
           <p className="font-[EkkamaiNew] font-bold">
             มีความยินดีขอเรียนเชิญท่าน <br />{" "}
@@ -24,18 +24,18 @@ const InviteSection = ({}: Props) => {
                 <h1 className="font-[Tangerine] font-bold text-6xl md:text-8xl text-center">
                   fon
                 </h1>
-                <p className="font-[EkkamaiNew] font-bold">
+                <p className="font-[EkkamaiNew] font-bold text-sm md:text-lg">
                   พญ. ธนิตา ลิ้มศิริ{" "}
                 </p>
               </div>
-              <p className="font-[Tangerine] font-bold text-6xl text-center">
+              <p className="font-[Tangerine] font-bold text-4xl md:text-6xl text-center">
                 &
               </p>
               <div>
                 <h1 className="font-[Tangerine] font-bold text-6xl md:text-8xl text-center">
                   Job
                 </h1>
-                <p className="font-[EkkamaiNew] font-bold">
+                <p className="font-[EkkamaiNew] font-bold text-sm md:text-lg">
                   นพ. ธนโชติ กมลาภิรัตน์
                 </p>
               </div>
@@ -45,13 +45,13 @@ const InviteSection = ({}: Props) => {
 
         <img
           alt="roses frame"
-          src="/images/roses-frame-left.webp"
-          className="w-[200px] absolute z-10 left-0 top-0 opacity-40"
+          src="/images/floral-pink-top-left.webp"
+          className="w-[200px] md:w-[250px] absolute z-10 left-0 top-0 opacity-40"
         />
         <img
           alt="roses frame"
-          src="/images/roses-frame-right.webp"
-          className="w-[200px] absolute z-10 right-0 bottom-0 opacity-40"
+          src="/images/floral-pink-bottom-right.webp"
+          className="w-[200px] md:w-[250px] absolute z-10 right-0 bottom-0 opacity-40"
         />
       </div>
     </SectionWrapper>

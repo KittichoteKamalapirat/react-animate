@@ -8,8 +8,6 @@ interface Props {
 }
 
 const SectionWrapper = ({ className = "", children }: Props) => {
-  return (
-    <section className={cn("mx-auto my-8", className)}>{children}</section>
-  );
+  return <section className={cn("mx-auto", className)}>{children}</section>;
 };
 export default SectionWrapper;

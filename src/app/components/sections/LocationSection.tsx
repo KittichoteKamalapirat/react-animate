@@ -23,8 +23,8 @@ const LocationSection = () => {
   if (!process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY) return;
   return (
     <SectionWrapper className="bg-primary-100 w-screen py-16">
-      <h2 className="text-xl text-center font-semibold">THE HALLS Bangkok</h2>
-      <p className="text-center text-smmd">02-015-3765</p>
+      <h2 className="heading2 text-center">THE HALLS Bangkok</h2>
+      <p className="text-center text-smmd mt-4">02-015-3765</p>
       <p className="text-center">
         79, 1 Vibhavadi Rangsit 64 Alley <br /> Talat Bang Khen, Lak Si <br />
         Bangkok 10210
