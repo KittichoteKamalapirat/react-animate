@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import clsx from "clsx";
 import React from "react";
 import SectionWrapper from "../wrappers/SectionWrapper";
@@ -8,7 +9,7 @@ const COLORS = ["bg-[#fff4e9]", "bg-[#ffd2d2]", "bg-[#e2a688]", "bg-[#7d563f]"];
 const DressCodeSection = ({}: Props) => {
   return (
     <SectionWrapper className="mx-8">
-      <div className="relative w-screen h-[50vh] flex items-center justify-center">
+      <div className="relative w-screen h-[80vh] md:h-[60vh] flex items-center justify-center">
         <div>
           <h2 className="heading2 text-center">Dress Code</h2>
           <p className="text-center">Any colors you like </p>

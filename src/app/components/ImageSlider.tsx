@@ -33,14 +33,13 @@ const ImageSlider = ({}: Props) => {
     breakpointToslidesPerViewMapper[breakpoint] ||
     breakpointToslidesPerViewMapper.DEFAULT;
 
-  console.log("slidesPerView", slidesPerView);
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       className="w-[80vw]"
-      // slidesPerView={1}
       navigation
-      autoplay={{ delay: 2000 }}
+      speed={3000}
+      autoplay={{ delay: 1000 }}
       // pagination={{ clickable: true }}
       spaceBetween={50}
       slidesPerView={slidesPerView}
