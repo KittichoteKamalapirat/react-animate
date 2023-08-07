@@ -15,6 +15,10 @@ export default function Home() {
       <LocationSection />
       <DateTimeSection />
       <ImagesSection />
+
+      <div>
+        <h3>Theme</h3>
+      </div>
       <FormSection />
     </main>
   );

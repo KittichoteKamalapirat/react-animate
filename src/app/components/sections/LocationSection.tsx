@@ -23,7 +23,7 @@ const LocationSection = () => {
 
   return (
     <SectionWrapper>
-      <h2 className="text-xl text-center">The Halls Bangkok</h2>
+      <h2 className="text-xl text-center">THE HALLSThe Halls Bangkok</h2>
       <div className="w-[600px] h-[400px] relative">
         <GoogleMapReact
           bootstrapURLKeys={{
