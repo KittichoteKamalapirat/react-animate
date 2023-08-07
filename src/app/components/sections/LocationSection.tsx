@@ -1,5 +1,4 @@
 "use client";
-
 import GoogleMapReact from "google-map-react";
 import { MdLocationPin } from "react-icons/md";
 import SectionWrapper from "../wrappers/SectionWrapper";
@@ -18,16 +17,22 @@ const LocationSection = () => {
       lat: 13.873904734916668,
       lng: 100.58171033296948,
     },
-    zoom: 16,
+    zoom: 14,
   };
 
+  if (!process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY) return;
   return (
-    <SectionWrapper>
-      <h2 className="text-xl text-center">THE HALLSThe Halls Bangkok</h2>
-      <div className="w-[600px] h-[400px] relative">
+    <SectionWrapper className="bg-primary-100 w-screen py-16">
+      <h2 className="text-xl text-center font-semibold">THE HALLS Bangkok</h2>
+      <p className="text-center text-smmd">02-015-3765</p>
+      <p className="text-center">
+        79, 1 Vibhavadi Rangsit 64 Alley <br /> Talat Bang Khen, Lak Si <br />
+        Bangkok 10210
+      </p>
+      <div className="w-[300px] h-[250px] md:w-[500px] md:h-[400px] relative mx-auto mt-8">
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: process.env.GOOGLE_MAP_KEY as string, // TODO
+            key: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY, // TODO
             version: "3.31",
           }}
           zoom={defaultProps.zoom}

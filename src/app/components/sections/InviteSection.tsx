@@ -6,7 +6,7 @@ interface Props {}
 
 const InviteSection = ({}: Props) => {
   return (
-    <SectionWrapper className="flex items-center justify-center w-screen h-screen">
+    <SectionWrapper className="flex items-center justify-center w-screen h-screen ">
       <div className="relative rounded-md max-w-lg py-40 md:py-20 bg-white w-full text-xl text-gray-800 shadow-[0_0_10px_0px_rgba(0,0,0,0.1)] mx-4">
         <p className="text-center">
           <p className="font-[EkkamaiNew] font-bold">
