@@ -1,4 +1,3 @@
-import AnimateBlob from "./components/AnimateBlob";
 import DateTimeSection from "./components/sections/DateTimeSection";
 import DressCodeSection from "./components/sections/DressCodeSectionSection";
 import FooterSection from "./components/sections/FooterSection";
@@ -6,7 +5,6 @@ import HeaderSection from "./components/sections/HeaderSection";
 import ImagesSection from "./components/sections/ImagesSection";
 import InviteSection from "./components/sections/InviteSection";
 import LocationSection from "./components/sections/LocationSection";
-import BlobVase1 from "./components/svg/BlobVase1";
 
 export default function Home() {
   return (
