@@ -9,12 +9,12 @@ const InviteSection = ({}: Props) => {
     <SectionWrapper className="flex items-center justify-center w-screen py-20 md:py-20">
       <div className="relative rounded-md max-w-lg py-40 md:py-60 bg-white w-full text-xl text-gray-800 shadow-[0_0_10px_0px_rgba(0,0,0,0.1)] mx-4">
         <div className="text-center">
-          <p className="font-[EkkamaiNew] font-bold">
+          <p className="font-[SukhumvitSet]">
             มีความยินดีขอเรียนเชิญท่าน <br />{" "}
             เพื่อเป็นเกียรติเนื่องในพิธีฉลองมงคลสมรส
           </p>
           <br />
-          <p className="font-[EkkamaiNew] font-bold">ระหว่าง</p>
+          <p className="font-[SukhumvitSet]">ระหว่าง</p>
           <br />
           {/* center wrapper */}
           <div className="flex flex-col items-center">
@@ -24,7 +24,7 @@ const InviteSection = ({}: Props) => {
                 <h1 className="font-[Tangerine] font-bold text-6xl md:text-8xl text-center">
                   fon
                 </h1>
-                <p className="font-[EkkamaiNew] font-bold text-sm md:text-lg">
+                <p className="font-[SukhumvitSet] font-medium text-sm md:text-lg">
                   พญ. ธนิตา ลิ้มศิริ{" "}
                 </p>
               </div>
@@ -35,7 +35,7 @@ const InviteSection = ({}: Props) => {
                 <h1 className="font-[Tangerine] font-bold text-6xl md:text-8xl text-center">
                   Job
                 </h1>
-                <p className="font-[EkkamaiNew] font-bold text-sm md:text-lg">
+                <p className="font-[SukhumvitSet] font-medium text-sm md:text-lg">
                   นพ. ธนโชติ กมลาภิรัตน์
                 </p>
               </div>

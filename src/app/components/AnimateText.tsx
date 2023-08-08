@@ -57,7 +57,7 @@ const AnimateText = ({}: Props) => {
       </div>
       <h2
         className={clsx(
-          "transition-all duration-[1000ms] delay-[2000ms] text-xl text-center",
+          "transition-all duration-[1000ms] delay-[2000ms] text-xl text-center font-[Montserrat]",
           animate ? "opacity-100" : "opacity-0"
           // heroTextColor
         )}

@@ -12,8 +12,8 @@ const DressCodeSection = ({}: Props) => {
       <div className="relative w-screen h-[80vh] md:h-[60vh] flex items-center justify-center">
         <div>
           <h2 className="heading2 text-center">Dress Code</h2>
-          <p className="text-center">Any colors you like </p>
-          <p className="text-center">OR</p>
+          <p className="text-center font-[Montserrat]">Any colors you like </p>
+          <p className="text-center font-[Montserrat]">OR</p>
           <div className="flex gap-4 mt-8">
             {COLORS.map((bgColor, index) => (
               <div

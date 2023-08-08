@@ -13,7 +13,7 @@ div {
   /* color: #1f2937; */
   /* color: #374151; */
   color: #4b5563;
-  font-family: "EkkamaiNew";
+  font-family: "SukhumvitSet";
   /* color: #6b7280; */
 }
 
@@ -52,8 +52,102 @@ div {
   font-weight: 700;
 }
 
+/* Sukhumvit */
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-Text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-Thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  font-display: swap;
+  src: url("/fonts/SukhumvitSet/SukhumvitSet-Light.ttf") format("truetype");
+  font-weight: 200;
+}
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("/fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
 .heading2 {
-  @apply text-xl md:text-3xl  font-semibold;
+  /* for English h2 */
+  @apply text-xl md:text-3xl  font-semibold font-[Montserrat];
 }
 
 /* swiper */

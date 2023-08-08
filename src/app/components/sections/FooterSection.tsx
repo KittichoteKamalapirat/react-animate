@@ -10,7 +10,7 @@ const FooterSection = ({}: Props) => {
       <footer>
         <div className="px-4 py-6 md:flex md:items-center md:justify-between w-screen text-center">
           <div className="mx-auto w-full max-w-screen-xl">
-            <h2 className="text-lg md:text-2xl text-center my">
+            <h2 className="text-lg md:text-2xl text-center my font-[Montserrat]">
               Looking forward to meeting all the guests 👰🏻🤵🏻
             </h2>
             <img
