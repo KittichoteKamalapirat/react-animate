@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -155,4 +161,14 @@ div {
   /* color: "#FBEFF0";  somehow color code doesn't work*/
 
   color: white;
+}
+
+/* Blobs SVG background image via https://haikei.app/ */
+
+.blob-motion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-20%);
+  z-index: 0;
 }

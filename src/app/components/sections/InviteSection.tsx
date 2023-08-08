@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import SectionWrapper from "../wrappers/SectionWrapper";
+import AnimateBlob from "../AnimateBlob";
+import FireshipBlob12 from "../svg/FireshipBlob12";
 
 interface Props {}
 
@@ -43,7 +45,7 @@ const InviteSection = ({}: Props) => {
           </div>
         </div>
 
-        <img
+        {/* <img
           alt="roses frame"
           src="/images/floral-pink-top-left.webp"
           className="w-[200px] md:w-[250px] absolute z-10 left-0 top-0 opacity-40"
@@ -52,7 +54,26 @@ const InviteSection = ({}: Props) => {
           alt="roses frame"
           src="/images/floral-pink-bottom-right.webp"
           className="w-[200px] md:w-[250px] absolute z-10 right-0 bottom-0 opacity-40"
-        />
+        /> */}
+
+        <div className="">
+          <AnimateBlob
+            image={
+              <div className="translate-x-[calc(8%-10px)] translate-y-1/3 absolute z-10 bottom-0 right-0 ">
+                <img
+                  alt="flower"
+                  src="/images/flower-1.svg"
+                  className="h-[100px] md:h-[150px] animate-wiggle"
+                />
+              </div>
+            }
+            blobId1="#blob1"
+            blobId2="#blob2"
+            blob={
+              <FireshipBlob12 className="w-40 h-40 md:w-60 md:h-60 absolute bottom-0 right-0 z-0  translate-x-[calc(50%-30px)] translate-y-1/2" />
+            }
+          />
+        </div>
       </div>
     </SectionWrapper>
   );
