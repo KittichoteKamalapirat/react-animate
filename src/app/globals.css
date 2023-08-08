@@ -13,6 +13,7 @@ div {
   /* color: #1f2937; */
   /* color: #374151; */
   color: #4b5563;
+  font-family: "EkkamaiNew";
   /* color: #6b7280; */
 }
 
@@ -58,5 +59,6 @@ div {
 /* swiper */
 [class^="swiper-button-"]::after {
   /* color: "#FBEFF0";  somehow color code doesn't work*/
+
   color: white;
 }
