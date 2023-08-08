@@ -54,3 +54,9 @@ div {
 .heading2 {
   @apply text-xl md:text-3xl  font-semibold;
 }
+
+/* swiper */
+[class^="swiper-button-"]::after {
+  /* color: "#FBEFF0";  somehow color code doesn't work*/
+  color: white;
+}

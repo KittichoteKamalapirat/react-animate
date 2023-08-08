@@ -3,10 +3,11 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { cn } from "../../utils/cn";
+import { BsChevronDown } from "react-icons/bs";
 
 interface Props {}
 
-const AnimateText = () => {
+const AnimateText = ({ heroTextColor }: { heroTextColor: string }) => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -20,10 +21,15 @@ const AnimateText = () => {
 
   return (
     <div>
-      <div className="flex gap-2 font-[Tangerine] text-black px-4 py-2 font-bold text-5xl md:text-7xl text-center ">
+      <div
+        className={clsx(
+          "flex gap-2 font-[Tangerine] px-4 py-2 font-bold text-5xl md:text-7xl text-center "
+        )}
+      >
         <h1
           className={clsx(
             "transition-all duration-[2000ms]",
+
             animate
               ? "translate-x-[0] opacity-100"
               : "-translate-x-[300px] opacity-0"
@@ -34,6 +40,7 @@ const AnimateText = () => {
         <h1
           className={clsx(
             "transition-all duration-[2000ms] delay-1000",
+
             animate ? "opacity-100" : "opacity-0"
           )}
         >
@@ -42,6 +49,7 @@ const AnimateText = () => {
         <h1
           className={clsx(
             "transition-all  duration-[2000ms]",
+
             animate
               ? "translate-x-[0] opacity-100"
               : "translate-x-[300px] opacity-0"
@@ -52,8 +60,9 @@ const AnimateText = () => {
       </div>
       <h2
         className={clsx(
-          "transition-all duration-[2000ms] delay-[2000ms] text-xl text-center",
+          "transition-all duration-[1000ms] delay-[2000ms] text-xl text-center",
           animate ? "opacity-100" : "opacity-0"
+          // heroTextColor
         )}
       >
         19 Aug 2023
@@ -64,6 +73,8 @@ const AnimateText = () => {
 const HeaderSection = ({}: Props) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const chevronColor = currentImageIndex === 0 ? "text-white" : "text-black";
+  const heroTextColor = currentImageIndex === 0 ? "text-white" : "text-black";
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((index) => (index + 1 > 2 ? 0 : index + 1));
@@ -160,7 +171,20 @@ const HeaderSection = ({}: Props) => {
       </div>
 
       <div className="absolute z-10 left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2">
-        <AnimateText />
+        <AnimateText heroTextColor={heroTextColor} />
+      </div>
+
+      <div
+        className={clsx(
+          "-translate-x-1/2 absolute bottom-1 left-1/2 transition-all duration-1000",
+          chevronColor
+        )}
+      >
+        <BsChevronDown
+          // color={chevronColor}
+          size={40}
+          className="animate-bounce"
+        />
       </div>
     </div>
   );
