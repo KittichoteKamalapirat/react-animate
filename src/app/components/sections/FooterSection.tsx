@@ -20,6 +20,7 @@ const FooterSection = ({}: Props) => {
             />
           </div>
         </div>
+        <p className="text-lg text-center animate-pulse">❤️</p>
       </footer>
     </SectionWrapper>
   );
