@@ -28,7 +28,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        "bounce-slow": "bounce 3s infinite",
+        "bounce-rotate": "bounce-rotate 1.2s infinite",
         wiggle: "wiggle 3s ease-in-out infinite",
         "wiggle-tiny": "wiggle 1s ease-in-out infinite",
       },
@@ -40,6 +40,16 @@ module.exports = {
         "wiggle-tiny": {
           "0%, 100%": { transform: "rotate(-0.5deg)" },
           "50%": { transform: "rotate(0.5deg)" },
+        },
+        "bounce-rotate": {
+          "0%, 100%": {
+            transform: "translateX(10%) translateY(-10%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
         },
       },
     },

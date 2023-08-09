@@ -1,17 +1,27 @@
 "use client";
+import { RiSyringeFill } from "react-icons/ri";
 import GoogleMapReact from "google-map-react";
 import { MdLocationPin } from "react-icons/md";
 import SectionWrapper from "../wrappers/SectionWrapper";
 
-const Pin = ({}: { lat: number; lng: number }) => (
+const NormalPin = ({}: { lat: number; lng: number }) => (
   <MdLocationPin
     size={40}
     color="red"
     className="absolute -translate-x-1/2 -translate-y-full" // make sure the tip points to location
   />
 );
+const SyringePin = ({}: { lat: number; lng: number }) => (
+  <div className="absolute -rotate-45  -translate-x-1/2 -translate-y-full ">
+    <RiSyringeFill
+      size={40}
+      color="red"
+      className="animate-bounce-rotate bg-white p-1 bg-opacity-50 border-gray-500 border-2 border-opacity-50 rounded-full " // make sure the tip points to location
+    />
+  </div>
+);
 
-const LocationSection = () => {
+const MapSection = () => {
   const defaultProps = {
     center: {
       lat: 13.873904734916668,
@@ -44,10 +54,10 @@ const LocationSection = () => {
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
-          <Pin lat={13.873904734916668} lng={100.58171033296948} />
+          <SyringePin lat={13.873904734916668} lng={100.58171033296948} />
         </GoogleMapReact>
       </div>
     </SectionWrapper>
   );
 };
-export default LocationSection;
+export default MapSection;

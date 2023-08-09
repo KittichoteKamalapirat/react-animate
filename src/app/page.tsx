@@ -4,7 +4,7 @@ import FooterSection from "./components/sections/FooterSection";
 import HeaderSection from "./components/sections/HeaderSection";
 import ImagesSection from "./components/sections/ImagesSection";
 import InviteSection from "./components/sections/InviteSection";
-import LocationSection from "./components/sections/LocationSection";
+import MapSection from "./components/sections/MapSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <HeaderSection />
       <InviteSection />
       {/* <VideoSection /> */}
-      <LocationSection />
+      <MapSection />
       <DateTimeSection />
       <ImagesSection />
       <DressCodeSection />
