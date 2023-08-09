@@ -15,15 +15,17 @@ const DateTimeSection = ({}: Props) => {
         <ul className="mt-8 md:w-[500px] mx-auto">
           <li className="grid grid-cols-2 ml-4">
             <p className="col-span1 font-[Montserrat]">13:00 - 15:30</p>
-            <p className="col-span-1 font-[SukhumvitSet]">งานหมั้น</p>
+            <p className="col-span-1 font-[SukhumvitSet]">
+              Engagement Ceremony 💍
+            </p>
           </li>
           <li className="grid grid-cols-2 ml-4">
             <p className="col-span-1 font-[Montserrat]">18:00 - 21:00</p>
-            <p className="col-span-1">งานเลี้ยง</p>
+            <p className="col-span-1">Wedding Reception 🥂</p>
           </li>
 
           <li className="grid grid-cols-2 ml-4">
-            <p className="col-span-1 font-[Montserrat]">21:00 ~</p>
+            <p className="col-span-1 font-[Montserrat]">21:00 onwards</p>
             <div className="col-span-1 font-[Montserrat]">
               <p>After Party 🎉</p>
             </div>

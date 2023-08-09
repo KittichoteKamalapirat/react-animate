@@ -3,6 +3,7 @@ import { RiSyringeFill } from "react-icons/ri";
 import GoogleMapReact from "google-map-react";
 import { MdLocationPin } from "react-icons/md";
 import SectionWrapper from "../wrappers/SectionWrapper";
+import Image from "next/image";
 
 const NormalPin = ({}: { lat: number; lng: number }) => (
   <MdLocationPin
@@ -43,6 +44,21 @@ const MapSection = () => {
         79, 1 Vibhavadi Rangsit 64 Alley <br /> Talat Bang Khen, Lak Si <br />
         Bangkok 10210
       </p>
+
+      <a
+        href="https://maps.app.goo.gl/yrr2qV3UCCmwSZFa7?g_st=il"
+        target="_blank"
+        className="flex items-center gap-2 bg-white px-2 py-1 mx-auto rounded-sm border-[1px] text-sm mt-2 hover:cursor-pointer w-fit"
+      >
+        <Image
+          alt="pink roses frame"
+          src="/images/icons/google-map.svg"
+          width={20}
+          height={20}
+        />
+        <p>Open in Google Map</p>
+      </a>
+
       <div className="w-[300px] h-[250px] md:w-[500px] md:h-[400px] relative mx-auto mt-8">
         <GoogleMapReact
           bootstrapURLKeys={{
