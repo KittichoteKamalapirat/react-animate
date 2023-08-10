@@ -1,13 +1,16 @@
-import clsx from "clsx";
-import React, { ReactNode } from "react";
+import { HTMLProps, ReactNode } from "react";
 import { cn } from "../../utils/cn";
 
-interface Props {
+interface Props extends HTMLProps<HTMLDivElement> {
   children: ReactNode;
   className?: string;
 }
 
-const SectionWrapper = ({ className = "", children }: Props) => {
-  return <section className={cn("mx-auto", className)}>{children}</section>;
+const SectionWrapper = ({ className = "", children, ...rest }: Props) => {
+  return (
+    <section className={cn("mx-auto", className)} {...rest}>
+      {children}
+    </section>
+  );
 };
 export default SectionWrapper;

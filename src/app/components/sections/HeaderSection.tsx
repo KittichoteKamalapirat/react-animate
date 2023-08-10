@@ -9,8 +9,8 @@ import AnimateText from "../AnimateText";
 const HeaderSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const chevronColor = currentImageIndex === 0 ? "text-white" : "text-black";
-  const heroTextColor = currentImageIndex === 0 ? "text-white" : "text-black";
+  const chevronColor = currentImageIndex === 0 ? "text-black" : "text-white";
+  const heroTextColor = currentImageIndex === 0 ? "text-black" : "text-white";
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((index) => (index + 1 > 2 ? 0 : index + 1));

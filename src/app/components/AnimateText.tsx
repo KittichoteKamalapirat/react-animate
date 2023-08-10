@@ -37,7 +37,6 @@ const AnimateText = ({}: Props) => {
         <h1
           className={clsx(
             "transition-all duration-[2000ms] font-[Tangerine] delay-1000",
-
             animate ? "opacity-100" : "opacity-0"
           )}
         >
