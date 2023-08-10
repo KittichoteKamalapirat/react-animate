@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+/* eslint-disable @next/next/no-img-element */
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -48,10 +49,16 @@ const ImageSlider = ({}: Props) => {
     >
       {[...Array.from({ length: 7 })].map((_, i) => (
         <SwiperSlide key={`slide-${i}`}>
-          <img
+          {/* <img
             alt="Header"
             src={`/images/slider-${i + 1}.webp`}
             className="w-[800px]"
+            loading="lazy"
+          /> */}
+          <LazyLoadImage
+            alt="Header"
+            src={`/images/slider-${i + 1}.webp`}
+            className="w-[800px] rounded-lg"
           />
         </SwiperSlide>
       ))}

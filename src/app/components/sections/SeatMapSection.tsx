@@ -1,5 +1,7 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import SectionWrapper from "../wrappers/SectionWrapper";
 
 interface Props {}
@@ -12,10 +14,10 @@ const SeatMapSection = ({}: Props) => {
     >
       <h2 className="heading2 text-center">Seat Map</h2>
 
-      <img
+      <LazyLoadImage
         src="/images/seat-map.webp"
         alt="slide_image"
-        className="w-11/12 mx-auto mt-8"
+        className="w-11/12 max-w-[400px] lg:max-w-[500px] mx-auto mt-8"
       />
     </SectionWrapper>
   );

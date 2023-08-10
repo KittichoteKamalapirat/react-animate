@@ -20,7 +20,7 @@ const HeaderSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen overflow-y-hidden">
+    <div className="relative h-screen w-screen overflow-hidden">
       {/* logo */}
       {/* <img
         alt="Logo"
