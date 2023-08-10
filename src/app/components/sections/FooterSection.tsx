@@ -16,7 +16,7 @@ const FooterSection = ({}: Props) => {
             <img
               alt="Footer"
               src={`/images/looking-forward.webp`}
-              className="w-11/12 md:max-w-[300px] mx-auto mt-10"
+              className="w-11/12 md:max-w-[300px] mx-auto mt-10 rounded-lg"
             />
           </div>
         </div>
