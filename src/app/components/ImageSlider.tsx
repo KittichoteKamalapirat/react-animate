@@ -14,10 +14,6 @@ import { useCurrentBreakpoint } from "../hooks/useCurrentBreakpoint";
 
 interface Props {}
 
-function rand(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
 const breakpointToslidesPerViewMapper = {
   xs: 1,
   sm: 2,
@@ -47,7 +43,7 @@ const ImageSlider = ({}: Props) => {
       // onSlideChange={() => console.log("slide change")}
       // onSwiper={(swiper) => console.log(swiper)}
     >
-      {[...Array.from({ length: 7 })].map((_, i) => (
+      {[...Array.from({ length: 5 })].map((_, i) => (
         <SwiperSlide key={`slide-${i}`}>
           {/* <img
             alt="Header"
@@ -58,7 +54,7 @@ const ImageSlider = ({}: Props) => {
           <LazyLoadImage
             alt="Header"
             src={`/images/slider-${i + 1}.webp`}
-            className="w-[800px] rounded-lg"
+            className="w-[400px] rounded-lg"
           />
         </SwiperSlide>
       ))}

@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fon & Job",
-  description: "Fon & Job Wedding Invitation",
+  title: "Cool React Animation",
+  description: "React Animation Components",
 };
 
 export default function RootLayout({

@@ -1,10 +1,7 @@
 import clsx from "clsx";
 import { useState, useEffect } from "react";
 
-interface Props {
-  heroTextColor: string;
-}
-const AnimateText = ({}: Props) => {
+const AnimateText = () => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -25,18 +22,17 @@ const AnimateText = ({}: Props) => {
       >
         <h1
           className={clsx(
-            "transition-all duration-[2000ms] font-[Tangerine]",
-
+            "transition-all duration-[2000ms] font-[Tangerine] text-white",
             animate
               ? "translate-x-[0] opacity-100"
               : "-translate-x-[300px] opacity-0"
           )}
         >
-          fon
+          Chihiro
         </h1>
         <h1
           className={clsx(
-            "transition-all duration-[2000ms] font-[Tangerine] delay-1000",
+            "transition-all duration-[2000ms] font-[Tangerine] delay-1000 text-white",
             animate ? "opacity-100" : "opacity-0"
           )}
         >
@@ -44,24 +40,23 @@ const AnimateText = ({}: Props) => {
         </h1>
         <h1
           className={clsx(
-            "transition-all duration-[2000ms] font-[Tangerine]",
+            "transition-all duration-[2000ms] font-[Tangerine] text-white",
 
             animate
               ? "translate-x-[0] opacity-100"
               : "translate-x-[300px] opacity-0"
           )}
         >
-          Job
+          Haku
         </h1>
       </div>
       <h2
         className={clsx(
-          "transition-all duration-[1000ms] delay-[2000ms] text-xl text-center font-[Montserrat]",
+          "transition-all duration-[1000ms] delay-[2000ms] text-xl text-center font-[Montserrat] text-white",
           animate ? "opacity-100" : "opacity-0"
-          // heroTextColor
         )}
       >
-        19 Aug 2023
+        Spirited Away§
       </h2>
     </div>
   );

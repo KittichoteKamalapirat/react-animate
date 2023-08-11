@@ -1,35 +1,30 @@
-import DateTimeSection from "./components/sections/DateTimeSection";
-import DressCodeSection from "./components/sections/DressCodeSectionSection";
-import FooterSection from "./components/sections/FooterSection";
-import HeaderSection from "./components/sections/HeaderSection";
+import BlobAndFlower from "./components/sections/BlobAndFlower";
+import FadedImages from "./components/sections/FadedImages";
 import ImagesSection from "./components/sections/ImagesSection";
-import InviteSection from "./components/sections/InviteSection";
-import MapSection from "./components/sections/MapSection";
-import SeatMapSection from "./components/sections/SeatMapSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between">
+      <h1 className="text-xl font-bold mt-20 mb-20">Cool React Animation</h1>
+      <div className="grid grid-cols-1 md:grid-col-3 lg:grid-cols-4 gap-10">
+        <div className="col-span-4">
+          <FadedImages />
+        </div>
+        <div className="col-span-4">
+          <BlobAndFlower />
+        </div>
+
+        <div className="col-span-4">
+          <ImagesSection />
+        </div>
+
+        {/* <div>
+          <p className="text-lg text-center animate-pulse">❤️</p>
+        </div> */}
+      </div>
       {/* added below so overflow absolute don't cause scrollable */}
       {/* https://stackoverflow.com/questions/64344836/absolutely-positioned-elements-adding-scroll-on-mobile */}
       <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
-      <a
-        href="#seat-map"
-        className="bg-white fixed bottom-2 right-2 z-50 ring-2 px-2 py-1 rounded-md text-lg ring-primary shadow-inner"
-      >
-        Find my seat 🪑
-      </a>
-      <HeaderSection />
-      <InviteSection />
-      {/* <VideoSection /> */}
-      <MapSection />
-      <SeatMapSection />
-      <DateTimeSection />
-      <ImagesSection />
-      <DressCodeSection />
-
-      {/* <FormSection /> */}
-      <FooterSection />
     </main>
   );
 }
